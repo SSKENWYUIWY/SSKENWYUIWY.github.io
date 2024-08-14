@@ -1,43 +1,56 @@
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #eee;
-        }
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Cantarell';
+    background-color: #eee;
+}
 
-        .main {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .content {
-            text-align: left;
-            font-size: 18px;
-            color: #333;
-        }
-        .logo {
-            font-size: 34px;
-            font-family: 'Cantarell';
-            font-weight: bold;
-            color: #9966CC;
-        }
-        footer {
-            text-align: center;
-            color: #aaa;
-            font-size: 18px;
-            font-family: 'Cantarell';
-        }
-        hr {
-            border: 1px solid #ccc;
-        }
-        .c {
-            color: #aaa;
-        }
-        .a-footer {
-            color: #aaa;
-        }
+.main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(153, 102, 204, 0.5), rgba(153, 102, 204, 0) 50%);
+    background-size: cover;
+    position: relative;
+}
+
+.content {
+    text-align: left;
+    font-size: 18px;
+    color: #333;
+}
+
+.logo, .logo-link {
+    font-size: 34px;
+    font-family: 'Cantarell';
+    font-weight: bold;
+    color: #9966CC;
+}
+.logo-link {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.logo-link:hover {
+    color: #6B478E;
+    transition: color 0.5s ease;
+}
+footer {
+    text-align: center;
+    color: #aaa;
+    font-size: 18px;
+    font-family: 'Cantarell';
+    padding: 20px 0;
+    width: 100%;
+}
+
+hr {
+    border: 1px solid #ddd;
+}
+
+.a-footer {
+    color: #aaa;
+}
